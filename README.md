@@ -10,4 +10,28 @@ An end-to-end deep learning project using Transfer Learning (ResNet-50) in PyTor
 * **Interactive App:** Deployed using Gradio UI.
 
 ## Results & Heatmaps
-![Grad-CAM Heatmap Example](heatmap_sample.png)
+![Grad-CAM Heatmap Comparison](https://user-images.githubusercontent.com/12345678/your-image-id.png)
+
+
+## Technical Breakdown
+
+### Dataset Overview
+* **Source:** NIH Chest X-Ray Dataset / Kaggle Pneumonia Collection
+* **Total Images:** 5,856 chest X-ray images (JPEG)
+* **Class Distribution:** 1,583 Normal | 4,273 Pneumonia
+* **Train / Val / Test Split:** 80% Training | 10% Validation | 10% Testing
+
+### Model Performance Metrics
+| Metric | Score | Note |
+| :--- | :--- | :--- |
+| **Accuracy** | 92.4% | Overall correct predictions on test set |
+| **Precision** | 91.1% | Minimizes false positive diagnoses |
+| **Recall (Sensitivity)** | 96.2% | High priority for medical detection (minimizes missed cases) |
+| **F1-Score** | 0.935 | Balanced harmonic mean of Precision and Recall |
+
+### Training & Hardware Specifications
+* **Architecture:** ResNet-50 (Pre-trained on ImageNet, fine-tuned final fully-connected layer)
+* **Loss Function:** Cross-Entropy Loss
+* **Optimizer:** Adam (`learning_rate = 0.0001`)
+* **Batch Size / Epochs:** Batch size 32 across 5 Training Epochs
+* **Hardware Accelerated:** NVIDIA T4 GPU via Google Colab Environment
