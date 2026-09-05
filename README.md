@@ -35,3 +35,5 @@ An end-to-end deep learning project using Transfer Learning (ResNet-50) in PyTor
 * **Optimizer:** Adam (`learning_rate = 0.0001`)
 * **Batch Size / Epochs:** Batch size 32 across 5 Training Epochs
 * **Hardware Accelerated:** NVIDIA T4 GPU via Google Colab Environment
+
+**https://0333e3d02ff740182c.gradio.live/**
