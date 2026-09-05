@@ -10,7 +10,7 @@ An end-to-end deep learning project using Transfer Learning (ResNet-50) in PyTor
 * **Interactive App:** Deployed using Gradio UI.
 
 ## Results & Heatmaps
-![Grad-CAM Heatmap Comparison](https://user-images.githubusercontent.com/12345678/your-image-id.png)
+![Grad-CAM Heatmap Comparison](heatmap_sample.png)
 
 
 ## Technical Breakdown
